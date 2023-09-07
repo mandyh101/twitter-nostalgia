@@ -14,6 +14,10 @@ import Link from '../../node_modules/next/link'
 // TODO update icons
 const NAVIGATION_ITEMS = [
   {
+    title: 'Twitter',
+    icon: BsTwitter
+  },
+  {
     title: 'Home',
     icon: BiHomeCircle
   },
@@ -46,28 +50,25 @@ const NAVIGATION_ITEMS = [
 const Home = () => {
   return (
     <div className='w-full h-full justify-center items-center relative bg-black'>
-      <div className='max-w-screen-lg w-full h-full flex relative'>
+      <div className='max-w-screen-xl w-full h-full flex relative'>
         {/* Left side bar */}
-        {/* commented out classes = fixed w-72 flex flex-col h-screen */}
-        <section className='flex flex-col w-72 space-y-4 my-4'>
+        {/* TODO make the section belwo a fixed element */}
+        <section className='flex flex-col h-screen w-72 space-y-4 my-4'>
           <div>
-            <Link href={'/'} className="text-white p-2 text-2xl">
-              <span>
-                <BsTwitter />
-              </span>
-            </Link>
             {
               NAVIGATION_ITEMS.map((item) => (
-                <Link className="hover:bg-white/50 text-white transition duration-200 flex items-center justify-start w-fit space-x-4 rounded-3xl p-2" href={`/${item.title.toLowerCase()}`} key={item.title}>
+                <Link className="hover:bg-white/50 text-white transition duration-200 flex items-center justify-start w-fit space-x-4 rounded-3xl py-2 px-4" href={`/${item.title.toLowerCase()}`} key={item.title}>
                   <div>
                     <item.icon />
                   </div>
-                  <div>
-                    {item.title}
-                  </div>
+                  {item.title != 'Twitter' && <div>{item.title}</div>}
+                  
                 </Link>
               ))
             }
+            <button className='rounded-full bg-twitterColor text-xl text-center px-6 py-4 hover:bg-opacity-70 duration-100'>
+              Tweet
+            </button>
           </div>
         </section>
         <main>Left section</main>
