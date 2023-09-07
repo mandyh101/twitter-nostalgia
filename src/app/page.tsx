@@ -48,11 +48,17 @@ const Home = () => {
     <div className='w-full h-full justify-center items-center relative bg-black'>
       <div className='max-w-screen-lg w-full h-full flex relative'>
         {/* Left side bar */}
-        <section className='max-w-screen-lg w-full h-full flex relative'>
+        {/* commented out classes = fixed w-72 flex flex-col h-screen */}
+        <section className='flex flex-col w-72 space-y-4 my-4'>
           <div>
+            <Link href={'/'} className="text-white p-2 text-2xl">
+              <span>
+                <BsTwitter />
+              </span>
+            </Link>
             {
               NAVIGATION_ITEMS.map((item) => (
-                <Link className="bg-white/50 flex items-center justify-centerspace-x-2 rounded-3xl px-4 py-3" href={`/${item.title.toLowerCase()}`} key={item.title}>
+                <Link className="hover:bg-white/50 text-white transition duration-200 flex items-center justify-start w-fit space-x-4 rounded-3xl p-2" href={`/${item.title.toLowerCase()}`} key={item.title}>
                   <div>
                     <item.icon />
                   </div>
