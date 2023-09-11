@@ -47,6 +47,7 @@ const NAVIGATION_ITEMS = [
   },
 ]
 
+// TODO make left side bar responsive for mobile (slide out menu from left when profile pic clicked, and small screens, icons only)
 function LeftSideBar() {
   return (
     <div>
