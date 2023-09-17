@@ -68,7 +68,7 @@ function LeftSideBar() {
             Tweet
           </button>
         </div>
-        <button className='flex items-center w-full rounded-full bg-transparent m-4 p-3 text-xs text-center hover:bg-white/10 transition duration-200 justify-between'>
+        <button className='flex items-center w-full rounded-full bg-transparent m-4 p-3 text-xs text-center hover:bg-white/10 transition duration-200 justify-between text-white'>
           <div className='flex items-center space-x-2'>
             <div className='rounded-full bg-slate-400 w-8 h-8'></div>
             <div className='text-left text-sm'>
