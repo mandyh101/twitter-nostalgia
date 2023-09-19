@@ -60,23 +60,24 @@ const Home = () => {
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid doloremque officia dignissimos fuga quia voluptates consectetur consequatur eveniet sed cumque error ullam aliquam debitis officiis, maxime nesciunt nihil voluptate aut a, quas neque cum earum provident aperiam?
                       </div>
                     </div>
+                    {/* TODO turn icon buttons into a component */}
                     <div className='bg-slate-400 aspect-square w-full h-96 rounded-xl'>
                       {/* square placeholder for tweet media */}
                     </div>
                     <div className='flex items-center justify-between text-white space-x-2 w-full'>
-                      <div className='rounded-full hover:bg-white/10 hover:text-twitterColor p-2 cursor-pointer'>
+                      <div className='rounded-full hover:bg-white/10 transition duration-200 p-3 hover:text-twitterColor cursor-pointer'>
                         <BsChat/>
                       </div>
-                      <div className='rounded-full hover:bg-white/10 hover:text-green-500 p-2 cursor-pointer'>
+                      <div className='rounded-full hover:bg-white/10 transition duration-200 p-3 hover:text-green-500 cursor-pointer'>
                         <AiOutlineRetweet/>
                       </div>
-                      <div className='rounded-full hover:bg-white/10 hover:text-red-500 p-2 cursor-pointer'>
+                      <div className='rounded-full hover:bg-white/10 transition duration-200 p-3 hover:text-red-500 cursor-pointer'>
                         <AiOutlineHeart/>
                       </div>
-                      <div className='rounded-full hover:bg-white/10 hover:text-twitterColor p-2 cursor-pointer'>
+                      <div className='rounded-full hover:bg-white/10 transition duration-200 p-3 hover:text-twitterColor cursor-pointer'>
                         <IoStatsChart />
                       </div>
-                      <div className='rounded-full hover:bg-white/10 hover:text-twitterColor p-2 cursor-pointer'>
+                      <div className='rounded-full hover:bg-white/10 transition duration-200 p-3 hover:text-twitterColor cursor-pointer'>
                         <IoShareOutline />
                       </div>
                     </div>
