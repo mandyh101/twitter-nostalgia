@@ -9,7 +9,7 @@ const Home = () => {
     <div className='w-full h-full justify-center items-center relative bg-black'>
       <div className='max-w-screen-xl w-full h-full flex relative'>
         <LeftSideBar />
-        <main className='ml-[275px] flex w-[600px] h-full min-h-screen flex-col border-l-[0.5px] border-r-[0.5px] border-gray-600'>
+        <main className='ml-[275px] flex w-full max-w-[600px] h-full min-h-screen flex-col border-l-[0.5px] border-r-[0.5px] border-gray-600'>
           <h1 className='3xl font-bold p-6 text-white backdrop-blur bg-black/10 sticky top-0'>
             Home
           </h1>
@@ -48,15 +48,22 @@ const Home = () => {
                   <div className='flex flex-col space-y-4'>
                     {/* user details */}
                     <div>
-                      <div className='flex flex-row items-center space-x-1 text-white'>
-                        <div className='font-bold'>Name of account</div>
-                        <div className='text-white/70'>@username</div>
-                        <BsDot />
-                        <div>4h</div> {/* TODO make dynamic - time since tweet was published  */}
-                        <div className=''><BsThreeDots/></div>
+                      <div className='flex items-center justify-between'>
+                        <div className='flex items-center space-x-1'>
+                          <div className='font-bold'>Name of account</div>
+                          <div className='text-gray-400'>@username</div>
+                          <div className='text-gray-400'>
+                            <BsDot />
+                          </div>
+                          <div className='text-gray-400'>4h</div>
+                          {/* TODO make dynamic - time since tweet was published  */}
+                        </div>
+                          <div className=''>
+                            <BsThreeDots/>
+                          </div>
                       </div>
                       {/* tweet text */}
-                      <div className='text-white text-sm'>
+                      <div className='text-white text-base'>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid doloremque officia dignissimos fuga quia voluptates consectetur consequatur eveniet sed cumque error ullam aliquam debitis officiis, maxime nesciunt nihil voluptate aut a, quas neque cum earum provident aperiam?
                       </div>
                     </div>
