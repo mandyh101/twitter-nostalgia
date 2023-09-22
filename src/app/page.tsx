@@ -16,7 +16,7 @@ const Home = () => {
                   id='searchbox'
                   type="text"
                   placeholder='Search'
-                  className='outline-none bg-neutral-900 w-full h-full rounded-full px-10 py-3 border border-transparent focus:border-twitterColor peer'
+                  className='outline-none bg-neutral-900 w-full h-full rounded-full px-10 py-3 border border-transparent focus:border-twitterColor peer focus:bg-gray-50'
                 />
                 <label 
                   htmlFor='searchBox' 
