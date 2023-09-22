@@ -12,17 +12,18 @@ const Home = () => {
           <section className='sticky top-0 mt-2 flex flex-col items-stretch h-screen px-6 w-[30%]'>
             <div>
               <div className='relative w-full h-full'>
-                <label 
-                  htmlFor='searchBox' 
-                  className='absolute top-0 left-0 h-full flex items-center justify-center p-4'
-                >
-                  <BsSearch className='w-4 h-4 text-gray-500' title='Search Twitter'/>
-                </label>
                 <input
                   id='searchbox'
                   type="text"
                   placeholder='Search'
-                  className='outline-none bg-neutral-900 w-full h-full rounded-full px-10 py-3 border border-transparent focus:border-twitterColor'/>
+                  className='outline-none bg-neutral-900 w-full h-full rounded-full px-10 py-3 border border-transparent focus:border-twitterColor peer'
+                />
+                <label 
+                  htmlFor='searchBox' 
+                  className='absolute top-0 left-0 h-full flex items-center justify-center p-4 text-gray-500 peer-focus:text-twitterColor'
+                >
+                  <BsSearch className='w-4 h-4' title='Search Twitter'/>
+                </label>
               </div>
             </div>
             <div></div>
