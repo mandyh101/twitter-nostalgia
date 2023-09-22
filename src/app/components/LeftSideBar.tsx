@@ -50,8 +50,8 @@ const NAVIGATION_ITEMS = [
 // TODO make left side bar responsive for mobile (slide out menu from left when profile pic clicked, and small screens, icons only)
 function LeftSideBar() {
   return (
-    <div>
-      <section className='fixed w-[275px] flex flex-col h-screen items-stretch px-6'>
+    <>
+      <section className='sticky left-0 w-[20%] flex flex-col h-screen items-stretch mx-2'>
         <div className='flex flex-col items-stretch h-full space-y-4 mt-4'>
           {
             NAVIGATION_ITEMS.map((item) => (
@@ -64,24 +64,26 @@ function LeftSideBar() {
               </Link>
             ))
           }
-          <button className='rounded-full m-4 p-2.5 bg-twitterColor text-lg text-center hover:bg-opacity-70 transition duration-200'>
+          <button className='rounded-full p-2.5 bg-twitterColor text-lg text-center hover:bg-opacity-70 transition duration-200 w-full'>
             Tweet
           </button>
         </div>
-        <button className='flex items-center w-full rounded-full bg-transparent m-4 p-3 text-xs text-center hover:bg-white/10 transition duration-200 justify-between text-white'>
-          <div className='flex items-center space-x-2'>
-            <div className='rounded-full bg-slate-400 w-8 h-8'></div>
-            <div className='text-left text-sm'>
-              <div className='font-semibold'>mandyCodes</div>
-              <div className=''>@mandycodes30</div>
+        <div>
+          <button className='flex items-center w-full rounded-full bg-transparent p-1 text-xs text-center hover:bg-white/10 transition duration-200 justify-between text-white'>
+            <div className='flex items-center space-x-2'>
+              <div className='rounded-full bg-slate-400 w-8 h-8'></div>
+              <div className='text-left text-xs'>
+                <div className='font-semibold'>mandyCodes</div>
+                <div className=''>@mandycodes30</div>
+              </div>
             </div>
-          </div>
-          <div>
-            <BsThreeDots/>
-          </div>
-        </button>
+            <div>
+              <BsThreeDots/>
+            </div>
+          </button>
+        </div>
       </section>
-    </div>
+    </>
   )
 }
 

@@ -6,7 +6,7 @@ import {IoStatsChart, IoShareOutline} from  'react-icons/io5'
 function MiddleSection() {
   return (
     <>
-      <main className='ml-[275px] flex w-full max-w-[600px] h-full min-h-screen flex-col border-l-[0.5px] border-r-[0.5px] border-gray-600'>
+      <main className='flex w-[50%] h-full min-h-screen flex-col border-l-[0.5px] border-r-[0.5px] border-gray-600'>
           <h1 className='3xl font-bold p-6 text-white backdrop-blur bg-black/10 sticky top-0'>
             Home
           </h1>
@@ -47,7 +47,7 @@ function MiddleSection() {
                     <div>
                       <div className='flex items-center justify-between'>
                         <div className='flex items-center space-x-1'>
-                          <div className='font-bold'>Name of account</div>
+                          <div className='font-bold text-white'>Name of account</div>
                           <div className='text-gray-400'>@username</div>
                           <div className='text-gray-400'>
                             <BsDot />
@@ -55,7 +55,7 @@ function MiddleSection() {
                           <div className='text-gray-400'>4h</div>
                           {/* TODO make dynamic - time since tweet was published  */}
                         </div>
-                          <div className=''>
+                          <div className='text-white'>
                             <BsThreeDots/>
                           </div>
                       </div>
