@@ -9,8 +9,8 @@ const Home = () => {
       <div className='max-w-[90vw] w-full h-full flex relative'>
         <LeftSideBar />
         <MiddleSection/>
-          <section className='sticky top-0 mt-2 flex flex-col items-stretch h-screen px-6 w-[30%]'>
-            <div>
+          <section className='mt-2 flex flex-col items-stretch h-screen px-6 w-[30%]'>
+            <div className='sticky top-0'>
               <div className='relative w-full h-full'>
                 <input
                   id='searchbox'
@@ -26,14 +26,33 @@ const Home = () => {
                 </label>
               </div>
             </div>
-            <div className='flex flex-col bg-neutral-900'>
-              <h3>What's happening</h3>
+            <div className='flex flex-col bg-neutral-900 rounded-xl my-4 text-white'>
+              <h3 className='font-bold text-xl my-4 px-4'>What's happening?!</h3>
               <div>
                 {Array.from({length:5}).map((_,i) => (
-                  <div key={i}>Trending item {i + 1} </div>
+                  <div
+                  key={i}
+                  className="hover:bg-white/10 p-4 last:rounded-b-xl transition duration-200"
+                  >
+                    <div className='font-bold text-lg'>Trending item {i + 1}</div>
+                    <div className='text-xs text-neutral-500'>35.4k</div>
+                  </div>
                 ))}
               </div>
-
+            </div>
+            <div className='flex flex-col bg-neutral-900 rounded-xl my-4 text-white'>
+              <h3 className='font-bold text-xl my-4 px-4'>Who to follow</h3>
+              <div>
+                {Array.from({length:5}).map((_,i) => (
+                  <div
+                  key={i}
+                  className="hover:bg-white/10 p-4 last:rounded-b-xl transition duration-200"
+                  >
+                    <div className='font-bold text-lg'>Trending item {i + 1}</div>
+                    <div className='text-xs text-neutral-500'>35.4k</div>
+                  </div>
+                ))}
+              </div>
             </div>
             <div></div>
           </section>
