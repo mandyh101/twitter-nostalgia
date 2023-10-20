@@ -51,7 +51,7 @@ const Home = () => {
                     <div className='flex flex-row space-x-2'>
                       <div className='w-10 h-10 bg-neutral-600 rounded-full'></div>
                       <div className='flex flex-col'>
-                        <div>Other user</div>
+                        <div className='font-bold'>Other user</div>
                         <div className='text-xs text-neutral-500'>@otheruser32</div>
                       </div>
                     </div>
