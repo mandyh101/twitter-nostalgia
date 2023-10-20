@@ -46,12 +46,25 @@ const Home = () => {
                 {Array.from({length:5}).map((_,i) => (
                   <div
                   key={i}
-                  className="hover:bg-white/10 p-4 last:rounded-b-xl transition duration-200"
+                  className="hover:bg-white/10 py-4 px-2 space-x-8 flex items-center last:rounded-b-xl transition duration-200"
                   >
-                    <div className='font-bold text-lg'>Trending item {i + 1}</div>
-                    <div className='text-xs text-neutral-500'>35.4k</div>
+                    <div className='flex flex-row space-x-2'>
+                      <div className='w-10 h-10 bg-neutral-600 rounded-full'></div>
+                      <div className='flex flex-col'>
+                        <div>Other user</div>
+                        <div className='text-xs text-neutral-500'>@otheruser32</div>
+                      </div>
+                    </div>
+                    <div>
+                      <button className='rounded-full px-6 py-2 bg-white text-neutral-950 '>
+                        Follow
+                      </button>
+                    </div>
                   </div>
                 ))}
+              </div>
+              <div className='py-4 px-2'>
+                <a className='text-twitterColor' href='#'>Show more</a>
               </div>
             </div>
             <div></div>
