@@ -6,7 +6,7 @@ import {IoStatsChart, IoShareOutline} from  'react-icons/io5'
 function MiddleSection() {
   return (
     <>
-      <main className='ml-1/5 mr-1/3 flex w-[50%] h-full min-h-screen flex-col border-l-[0.5px] border-r-[0.5px] border-gray-600'>
+      <main className='ml-1/5 mr-1/3 flex w-3/5 h-full min-h-screen flex-col border-l-[0.5px] border-r-[0.5px] border-gray-600'>
           <h1 className='3xl font-bold p-6 text-white backdrop-blur bg-black/10 sticky top-0'>
             Home
           </h1>

@@ -5,8 +5,9 @@ import RightSideBar from './components/RightSideBar'
 
 const Home = () => {
   return (
+    // TODO make responsive
     <div className='w-full h-full flex justify-center items-center relative bg-black'>
-      <div className='max-w-[90vw] w-full h-full flex'>
+      <div className='w-[90vw] m-auto h-full max-w-screen-xl flex relative'>
         <LeftSideBar />
         <MiddleSection/>
         <RightSideBar />

@@ -51,7 +51,7 @@ const NAVIGATION_ITEMS = [
 function LeftSideBar() {
   return (
     <>
-      <section className='relative left-0 w-[20%] flex flex-col h-screen items-stretch mx-2'>
+      <section className='relative left-0 w-1/5 flex flex-col h-screen items-stretch mx-4'>
         <div className='fixed'>
           <div className='flex flex-col items-stretch h-full space-y-4 mt-4'>
             {
