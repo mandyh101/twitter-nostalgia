@@ -64,7 +64,7 @@ function LeftSideBar() {
                 </Link>
               ))
             }
-            <button className='rounded-full p-2.5 bg-primary text-lg text-center hover:bg-opacity-70 transition duration-200 w-full'>
+            <button className='rounded-full p-2.5 bg-twitterColor text-white text-lg text-center hover:bg-opacity-70 transition duration-200 w-full'>
               Tweet
             </button>
           </div>

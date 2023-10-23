@@ -25,7 +25,7 @@ function MiddleSection() {
                 </div>
                 <div className='w-full max-w-[70px]'>
                   <button 
-                    className='rounded-full px-4 py-2 w-full bg-primary text-sm font-semibold text-center hover:bg-opacity-70 transition duration-200'
+                    className='rounded-full px-4 py-2 w-full bg-twitterColor text-white text-sm font-semibold text-center hover:bg-opacity-70 transition duration-200'
                     >
                     Tweet
                   </button>
@@ -69,7 +69,7 @@ function MiddleSection() {
                       {/* square placeholder for tweet media */}
                     </div>
                     <div className='flex items-center justify-between text-white space-x-2 w-full'>
-                      <div className='rounded-full hover:bg-white/10 transition duration-200 p-3 hover:text-primary cursor-pointer'>
+                      <div className='rounded-full hover:bg-white/10 transition duration-200 p-3 hover:text-twitterColor cursor-pointer'>
                         <BsChat/>
                       </div>
                       <div className='rounded-full hover:bg-white/10 transition duration-200 p-3 hover:text-green-500 cursor-pointer'>
@@ -78,10 +78,10 @@ function MiddleSection() {
                       <div className='rounded-full hover:bg-white/10 transition duration-200 p-3 hover:text-red-500 cursor-pointer'>
                         <AiOutlineHeart/>
                       </div>
-                      <div className='rounded-full hover:bg-white/10 transition duration-200 p-3 hover:text-primary cursor-pointer'>
+                      <div className='rounded-full hover:bg-white/10 transition duration-200 p-3 hover:text-twitterColor cursor-pointer'>
                         <IoStatsChart />
                       </div>
-                      <div className='rounded-full hover:bg-white/10 transition duration-200 p-3 hover:text-primary cursor-pointer'>
+                      <div className='rounded-full hover:bg-white/10 transition duration-200 p-3 hover:text-twitterColor cursor-pointer'>
                         <IoShareOutline />
                       </div>
                     </div>

@@ -12,11 +12,11 @@ function RightSideBar() {
               id='searchbox'
               type="text"
               placeholder='Search'
-              className='outline-none bg-neutral-900 w-full h-full rounded-full px-10 py-3 border border-transparent focus:border-primary peer focus:bg-gray-50'
+              className='outline-none bg-neutral-900 w-full h-full rounded-full px-10 py-3 border border-transparent focus:border-twitterColor peer focus:bg-gray-50'
             />
             <label
               htmlFor='searchBox'
-              className='absolute top-0 left-0 h-full flex items-center justify-center p-4 text-gray-500 peer-focus:text-primary'
+              className='absolute top-0 left-0 h-full flex items-center justify-center p-4 text-gray-500 peer-focus:text-twitterColor'
             >
               <BsSearch className='w-4 h-4' title='Search Twitter'/>
             </label>
@@ -60,7 +60,7 @@ function RightSideBar() {
             ))}
           </div>
           <div className='py-4 px-2'>
-            <a className='text-primary' href='#'>Show more</a>
+            <a className='text-twitterColor' href='#'>Show more</a>
           </div>
         </div>
       </div>
