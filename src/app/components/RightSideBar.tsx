@@ -4,7 +4,7 @@ import { BsSearch } from 'react-icons/bs'
 
 function RightSideBar() {
   return (
-    <section className='relative right-0 w-2/5 mt-2 flex flex-col items-stretch px-2 mx-4'>
+    <section className='relative right-0 w-2/5 mt-2 flex flex-col items-stretch px-1 mx-4'>
       <div className='fixed'>
         <div>
           <div className='relative w-full h-full'>
